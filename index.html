@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Your Name</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+	<main>
+		<input type="text" class="input" id="input" placeholder="Your Current Name">
+		<div class="button" id="button" onclick="rever()">Change My Name</div>
+		<span class="output" id="output"></span>
+	</main>
+
+	<script type="text/javascript">
+
+		function rever() { 
+			document.getElementById('output').
+			innerHTML = document.getElementById('input').
+			value.split("").reverse().join("");
+		}
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+* {
+	box-sizing: border-box;
+	font-family: Helvetica;
+}
+
+body {
+	height: 100%;
+}
+
+main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 30em;
+}
+
+.input {
+	width: 15em;
+	height: 2.5em;
+	margin-bottom: 1em;
+	font-size: 0.9em;
+	border: 1px solid grey;
+	color: black;
+}
+
+.button {
+	height: 2em;
+	margin-bottom: 1em;
+	background-color: #33ccff;
+	padding: 0.5em 1em 0 1em;
+	border: 1px solid grey;
+}
+
+.button:hover {
+	background-color: #b3ecff; 
+}
+
+.output {
+	background-color: #b3ecff;
+	color: red;
+	width: 13em;
+	height: 2em;
+	font-size: 1.1em;
+	border: 1px solid grey;
+	color: black;
+}
