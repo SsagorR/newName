@@ -5,6 +5,7 @@
 
 body {
 	height: 100%;
+	background-color: #e6f9ff;
 }
 
 main {
@@ -15,6 +16,11 @@ main {
 	height: 30em;
 }
 
+.your-name {
+	font-size: 1.8em;
+	margin-bottom: 1em;
+}
+
 .input {
 	width: 15em;
 	height: 2.5em;
@@ -23,6 +29,8 @@ main {
 	border: 1px solid grey;
 	color: black;
 	font-weight: bolder;
+	padding-left: 1em;
+	padding-right: 1em;
 }
 
 .button {
@@ -40,12 +48,16 @@ main {
 .output {
 	background-color: #b3ecff;
 	color: red;
-	width: 13em;
+	width: auto;
+	min-width: 13em;
 	height: 2em;
 	font-size: 1.1em;
 	border: 1px solid grey;
 	color: black;
 	padding-top: 0.4em;
+	padding-left: 1em;
+	padding-right: 1em;
+	display: inline-block;
 }
 
 .capitalize {
