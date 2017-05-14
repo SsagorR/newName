@@ -22,6 +22,7 @@ main {
 	font-size: 0.9em;
 	border: 1px solid grey;
 	color: black;
+	font-weight: bolder;
 }
 
 .button {
@@ -44,4 +45,9 @@ main {
 	font-size: 1.1em;
 	border: 1px solid grey;
 	color: black;
+	padding-top: 0.4em;
+}
+
+.capitalize {
+	text-transform:capitalize;
 }

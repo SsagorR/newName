@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>Your Name</title>
+	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
@@ -17,8 +18,17 @@
 		function rever() { 
 			document.getElementById('output').
 			innerHTML = document.getElementById('input').
-			value.split("").reverse().join("");
+			value.toLowerCase().split("").reverse().join("");
 		}
+
+		document.onkeyup = function (e) {
+			e = e || window.event;
+			if (e.keyCode === 13) {
+				rever();
+			}
+			return false;
+		}
+
 	</script>
 
 </body>
