@@ -9,27 +9,21 @@
 <body>
 	<main>
 		<span class="your-name">Your name if You were a Honduran</span>
-		<input type="text" class="input" id="input" placeholder="Your Current Name">
-		<div class="button" id="button" onclick="rever()">Change My Name</div>
+		<input type="text" class="input" id="input" placeholder="Your Current Name" onkeyup="rever()">
 		<span class="output" id="output"></span>
 	</main>
 
 	<script type="text/javascript">
-
-		function rever() { 
-			document.getElementById('output').
-			innerHTML = document.getElementById('input').
+		
+		document.getElementById('input').addEventListener('keydown', rever);
+		
+		function rever() { 	
+			var result = document.getElementById('input').
 			value.toLowerCase().split("").reverse().join("").split(' ').reverse().join(' ');
-		}
 
-		document.onkeyup = function (e) {
-			e = e || window.event;
-			if (e.keyCode === 13) {
-				rever();
-			}
-			return false;
+			document.getElementById('output').
+			innerHTML = result;
 		}
-
 	</script>
 
 </body>
