@@ -19,7 +19,7 @@
 		function rever() { 
 			document.getElementById('output').
 			innerHTML = document.getElementById('input').
-			value.toLowerCase().split("").reverse().join("");
+			value.toLowerCase().split("").reverse().join("").split(' ').reverse().join(' ');
 		}
 
 		document.onkeyup = function (e) {

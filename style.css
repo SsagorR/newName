@@ -58,8 +58,5 @@ main {
 	padding-left: 1em;
 	padding-right: 1em;
 	display: inline-block;
-}
-
-.capitalize {
-	text-transform:capitalize;
+	text-transform: capitalize;
 }
